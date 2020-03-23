@@ -246,10 +246,10 @@
 			<key>begin</key>
 			<string>(?ix)   # Enable free spacing mode, case insensitive
 			         # Make sure our opening js tag has word boundaries
-			         (?&lt;=\{\%\sjs\s\%\}|\{\%\sincludejs\s\%\})
+			         (?&lt;=\{\%\sjs\s\%\}|{\%\sjs\sat\shead\s\%\}|{\%\sjs\sat\sbeginBody\s\%\}|{\%\sjs\sat\sendBody\s\%\}|{\%\sjs\son\sload\s\%\}|{\%\sjs\son\sready\s\%\}|\{\%\sincludejs\s\%\})
 				     </string>
 			<key>comment</key>
-			<string>Add JS support to set tags that use the pattern "css" in their name</string>
+			<string>Add JS support to set tags that use the pattern "js" in their name</string>
 			<key>end</key>
 			<string>(?ix)(?=\{\%\sendjs\s\%\}|\{\%\sendincludejs\s\%\})</string>
 			<key>name</key>
